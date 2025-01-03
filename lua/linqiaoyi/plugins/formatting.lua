@@ -21,6 +21,11 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 			},
+            formatters = {
+                prettier = {
+                    append_args = { "--tab-width", "4" },
+                },
+            },
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
